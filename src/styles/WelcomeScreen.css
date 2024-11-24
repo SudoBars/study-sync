@@ -1,0 +1,45 @@
+.welcome-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #7c4dff, #b39ddb);
+    color: white;
+    text-align: center;
+    animation: fade-in 2s ease-in-out;
+  }
+  
+  .welcome-logo {
+    width: 150px;
+    margin-bottom: 20px;
+    animation: logo-bounce 2s infinite ease-in-out;
+  }
+  
+  .welcome-title {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .welcome-subtitle {
+    font-size: 1.2rem;
+  }
+  
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes logo-bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
